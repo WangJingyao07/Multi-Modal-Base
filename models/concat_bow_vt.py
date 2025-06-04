@@ -1,0 +1,24 @@
+
+import torch
+import torch.nn as nn
+
+from .bow import GloveBowEncoder
+from .image import ImageEncoder
+
+
+class MultimodalConcatBowClf(nn.Module):
+    def __init__(self, args):
+        super(MultimodalConcatBowClf, self).__init__()
+        self.args = args
+        self.clf = nn.Linear(
+            args.embed_sz + (args.img_hidden_sz * args.num_image_embeds), args.n_classes
+        )
+        self.txtenc = GloveBowEncoder(args)
+        self.imgenc = ImageEncoder(args)
+
+    def forward(self, txt, img):
+        txt = self.txtenc(txt)
+        img = self.imgenc(img)
+        img = torch.flatten(img, start_dim=1)
+        cat = torch.cat([txt, img], -1)
+        return self.clf(cat)
