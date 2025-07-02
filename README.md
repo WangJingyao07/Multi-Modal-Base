@@ -1,5 +1,6 @@
 # Multi-Modal-Base
 
+
 [![Awesome](https://img.shields.io/badge/Demo-green)](https://wangjingyao07.github.io/C3R.github.io/)
 ![Static Badge](https://img.shields.io/badge/ICML25-yellow)
 ![Static Badge](https://img.shields.io/badge/to_be_continue-orange)
@@ -8,6 +9,12 @@
 An open source multi-modal codebase
 
 This repository provides Pytorch implementation of MML baselines and configurations for academic research, as well as several plug-and-play MML modules, including PyTorch code for [ICML2025] Towards the Causal Complete Cause of Multi-Modal Representation Learning.
+
+### 🚀 Live Demo Website
+
+🥇[ICML2025] Towards the Causal Complete Cause of Multi-Modal Representation Learning
+
+👉 **[Click here to view the project online](https://wangjingyao07.github.io/C3R.github.io/)**
 
 
 
