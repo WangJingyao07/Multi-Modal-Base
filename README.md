@@ -1,6 +1,6 @@
 # Multi-Modal-Base
 
-[![Demo](https://img.shields.io/badge/Web-Demo-blue?logo=google-chrome)](https://github.com/WangJingyao07/C3R.github.io)
+[![Awesome](https://img.shields.io/badge/Demo-red)](https://github.com/WangJingyao07/C3R.github.io)
 ![Static Badge](https://img.shields.io/badge/ICML25-yellow)
 ![Static Badge](https://img.shields.io/badge/to_be_continue-orange)
 ![Stars](https://img.shields.io/github/stars/WangJingyao07/Multi-Modal-Base)
